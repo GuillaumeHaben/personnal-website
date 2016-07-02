@@ -1,31 +1,21 @@
-# Lumen
+# Personnal Website
 
-Gatsby starter for creating a blog
+Static website using [Gatsby](https://github.com/gatsbyjs/gatsby)
 
 ## Features
-+ Inline CSS.
-+ Clean and extensible code.
-+ Six simple components: SiteSidebar, SiteNav, SiteLinks, SitePost, SitePage, ReadNext.
-+ [peterramsing/lost](https://github.com/peterramsing/lost) as a base for Grid.
-+ [matejlatin/Gutenberg](https://github.com/matejlatin/Gutenberg) as a base for Typography.
-
-## Installing
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new lumen https://github.com/wpioneer/gatsby-starter-lumen`
 
 ## Running in development
 `gatsby develop`
 
-![](http://i.imgur.com/422y5GV.png)
-
 ## Ports
+http://localhost:8000
 
-[Statinamic port](https://github.com/thangngoc89/statinamic-theme-lumen) by [Khoa Nguyen](https://github.com/thangngoc89)
+## Changelog
 
 ## License
 The MIT license.
 
-Copyright (c) 2016 Alexandr Shelepenok [ashk.io](http://ashk.io)
+Copyright (c) 2016 Guillaume Haben
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
