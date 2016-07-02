@@ -1,0 +1,20 @@
+.blog-social {
+	margin-top: 30px;
+}
+.blog-social a {
+	margin-right: 5px;
+	text-align: center;
+	height: 24px;
+	width: 24px;
+}
+.blog-social a:hover {
+	color: #f4f4f4;
+}
+.blog-social a > i {
+	color: #999;
+	font-size: 18px;
+	line-height: 24px;
+}
+.blog-social a:hover i {
+	color: #fff;
+}

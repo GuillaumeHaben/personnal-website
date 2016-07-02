@@ -1,0 +1,79 @@
+@import url(http://db.onlinewebfonts.com/c/9999e6133b66f98f92d93dca4a1cd8d3?family=Metropolis+1920);
+@import url(http://db.onlinewebfonts.com/c/d007e5e80d2a1e560bcd791f56860028?family=Rockwell+Condensed);
+.sidebar {
+	lost-column: 2/7;
+	text-align: center;
+	height: 100vh;
+	position: fixed;
+	background-color: #004266;
+}
+.sidebar .sidebar-inner {
+	position: relative;
+	padding: 40px;
+	color: #FFF;
+}
+.sidebar .sidebar-inner:after {
+	background: #eee;
+	background: linear-gradient(to bottom, #eee 0%, #eee 48%, #fff 100%);
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 540px;
+	top: 30px;
+	right: -10px;
+	bottom: 0;
+}
+.sidebar .sidebar-inner h1, .sidebar .sidebar-inner h2 {
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 18px;
+	margin: 30px 0 30px;
+	font-family: "Rockwell Condensed";
+}
+.sidebar .sidebar-inner p {
+	color: #aaa;
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 26px;
+}
+.sidebar .sidebar-inner p.copyright {
+	color: #fff;
+	font-size: 14px;
+}
+@media (max-width:1100px) {
+	.sidebar .sidebar-inner {
+		padding: 35px 20px 0;
+	}
+	.sidebar {
+		lost-column: 1/3;
+		position: fixed;
+	}
+}
+@media (max-width:900px) {
+	.sidebar {
+		lost-column: 1/2;
+		position: fixed;
+	}
+	.sidebar .sidebar-inner {
+		padding: 30px 20px 0;
+	}
+}
+@media (max-width:500px) {
+	.sidebar {
+		lost-column: 1;
+		position: relative;
+	}
+	.sidebar .sidebar-inner {
+		padding: 25px 20px 0;
+	}
+	.sidebar .sidebar-inner:after {
+		display: none;
+	}
+}
+
+.sidebar .initials {
+	font-family: "Metropolis 1920";
+	font-size: 150px;
+	padding-left: 7%;
+	color: #FFF;
+}
