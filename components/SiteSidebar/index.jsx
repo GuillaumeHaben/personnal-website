@@ -5,6 +5,8 @@ import { config } from 'config'
 import SiteNav from '../SiteNav'
 import SiteLinks from '../SiteLinks'
 import './style.css'
+import TypeWriter from 'react-typewriter';
+
 
 class SiteSidebar extends React.Component {
     render() {
@@ -17,7 +19,14 @@ class SiteSidebar extends React.Component {
           <div className="initials">GH</div>
           </Link>
           { isHome ? (
-            <h1><Link style={ {    textDecoration: 'none',    borderBottom: 'none',    color: 'inherit'} } to={ prefixLink('/') }> { config.siteAuthor } </Link></h1>
+              <h1>
+                &nbsp;<TypeWriter typing={1} minDelay={400}>
+                <Link
+                  style={ {    textDecoration: 'none',    borderBottom: 'none',    color: 'inherit'} }
+                  to={ prefixLink('/') }> { config.siteAuthor }
+                </Link>
+              </TypeWriter>
+              </h1>
             ) :
             <h2><Link style={ {    textDecoration: 'none',    borderBottom: 'none',    color: 'inherit'} } to={ prefixLink('/') }> { config.siteAuthor } </Link></h2> }
           <p>

@@ -9,4 +9,4 @@ siteEmailUrl = "mailto:haben.guillaume@me.com"
 siteRssUrl = "#"
 siteVkUrl = "#"
 
-linkPrefix = "/lumen"
+linkPrefix = "/"

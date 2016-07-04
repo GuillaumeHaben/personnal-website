@@ -2,6 +2,7 @@ import React from 'react'
 import DocumentTitle from 'react-document-title'
 import SitePost from '../components/SitePost'
 import SitePage from '../components/SitePage'
+import SiteBlog from '../components/SiteBlog'
 import { config } from 'config'
 
 class MarkdownWrapper extends React.Component {
@@ -12,9 +13,13 @@ class MarkdownWrapper extends React.Component {
 
         layout = post.layout
 
-        if (layout != 'page') {
+        if (layout == 'post') {
             template = <SitePost {...this.props}/>
-        } else {
+        }
+        if (layout == 'blog') {
+            template = <SiteBlog {...this.props}/>
+        }
+        else {
             template = <SitePage {...this.props}/>
         }
 
