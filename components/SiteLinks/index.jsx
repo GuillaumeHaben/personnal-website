@@ -12,6 +12,7 @@ class SiteLinks extends React.Component {
             <div className='blog-social'>
                   <a href={ config.siteTwitterUrl } target="_blank"><i className='fa fa-twitter'></i></a>&nbsp;
                   <a href={ config.siteGithubUrl } target="_blank"><i className='fa fa-github-alt'></i></a>&nbsp;
+                  <a href={ config.siteLinkedinUrl } target="_blank"><i className='fa fa-linkedin-square'></i></a>&nbsp;
                   <a href={ config.siteEmailUrl } target="_blank"><i className='fa fa-envelope-o'></i></a>
 
             </div>

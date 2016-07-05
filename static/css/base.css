@@ -1,5 +1,53 @@
+@import 'https://fonts.googleapis.com/css?family=Petrona|Basic';
+
 html, body {
 	background-color: #eee;
+}
+
+.oldStyle {
+	font-family: "monospace";
+}
+
+a {
+	color: #2F66FE;
+}
+a:hover {
+	color: #2F66FE;
+	text-decoration: underline;
+}
+
+.text p {
+	font-family: "Petrona";
+	font-size: 1.1em;
+	text-align: justify;
+}
+
+.text h1, h2 {
+	font-family: "Basic";
+	margin-top: 10px;
+}
+
+.oldStyle:after {
+	content:"_";
+	opacity: 0;
+	animation: cursor 1s infinite;
+}
+@keyframes cursor {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 .wrapper {

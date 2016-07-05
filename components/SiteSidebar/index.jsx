@@ -20,12 +20,10 @@ class SiteSidebar extends React.Component {
           </Link>
           { isHome ? (
               <h1>
-                &nbsp;<TypeWriter typing={1} minDelay={400}>
                 <Link
                   style={ {    textDecoration: 'none',    borderBottom: 'none',    color: 'inherit'} }
                   to={ prefixLink('/') }> { config.siteAuthor }
                 </Link>
-              </TypeWriter>
               </h1>
             ) :
             <h2><Link style={ {    textDecoration: 'none',    borderBottom: 'none',    color: 'inherit'} } to={ prefixLink('/') }> { config.siteAuthor } </Link></h2> }

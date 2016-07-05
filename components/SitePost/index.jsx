@@ -19,7 +19,6 @@ class SitePost extends React.Component {
           </Link>
         </div>
         )
-
         return (
             <div>
               { home }
@@ -34,11 +33,7 @@ class SitePost extends React.Component {
                 <div className='footer'>
                   <ReadNext post={ post } {...this.props}/>
                   <hr></hr>
-                  <p>
-                    { config.siteDescr }
-                    <a href={ config.twitter }>
-                      <br></br> <strong>{ config.siteAuthor }</strong> on Twitter</a>
-                  </p>
+                  {/* Disqus here */}
                 </div>
               </div>
             </div>

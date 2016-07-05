@@ -21,7 +21,7 @@ class SitePage extends React.Component {
                     <div className='blog-page'>
                       <div className='text'>
                         <h1>{ post.title }</h1>
-                        <div dangerouslySetInnerHTML={ {    __html: post.body} } />
+                        <div className="text" dangerouslySetInnerHTML={ {    __html: post.body} } />
                       </div>
                     </div>
                   </div>
