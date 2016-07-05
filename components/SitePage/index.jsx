@@ -12,7 +12,6 @@ class SitePage extends React.Component {
     render() {
         const {route} = this.props
         const post = route.page.data
-
         return (
             <div>
               <SiteSidebar {...this.props}/>
@@ -22,7 +21,7 @@ class SitePage extends React.Component {
                     <div className='blog-page'>
                       <div className='text'>
                         <h1>{ post.title }</h1>
-                        <div dangerouslySetInnerHTML={ {    __html: post.body} } />
+                        <div className="text" dangerouslySetInnerHTML={ {    __html: post.body} } />
                       </div>
                     </div>
                   </div>
