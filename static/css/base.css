@@ -8,10 +8,10 @@ html, body {
 	font-family: "monospace";
 }
 
-a {
+.text a {
 	color: #2F66FE;
 }
-a:hover {
+.text a:hover {
 	color: #2F66FE;
 	text-decoration: underline;
 }

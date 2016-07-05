@@ -6,6 +6,7 @@ import { prefixLink } from 'gatsby-helpers'
 import access from 'safe-access'
 import { config } from 'config'
 import ReadNext from '../ReadNext'
+import ReactDisqusThread from 'react-disqus-thread'
 import './style.css'
 import '../../static/css/highlight.css'
 
@@ -19,6 +20,7 @@ class SitePost extends React.Component {
           </Link>
         </div>
         )
+        console.log(post);
         return (
             <div>
               { home }
@@ -33,7 +35,13 @@ class SitePost extends React.Component {
                 <div className='footer'>
                   <ReadNext post={ post } {...this.props}/>
                   <hr></hr>
-                  {/* Disqus here */}
+                  <ReactDisqusThread
+                    shortname="example"
+                    identifier="something-unique-12345"
+                    title="Example Thread"
+                    url="http://www.example.com/example-thread"
+                    category_id="123456"
+                    onNewComment={this.handleNewComment}/>
                 </div>
               </div>
             </div>

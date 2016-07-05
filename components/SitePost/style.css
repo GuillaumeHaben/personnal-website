@@ -9,6 +9,9 @@
 	line-height: 30px;
 	margin-bottom: 20px;
 }
+.blog-post h2 a {
+	color: #004266;
+}
 .blog-post h2 a:hover {
 	border-bottom: 1px solid;
 }
