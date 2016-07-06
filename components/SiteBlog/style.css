@@ -15,3 +15,8 @@
 		padding: 0 15px;
 	}
 }
+
+.estimatedTime {
+	font-size: 0.9em;
+	color: #0022ee;
+}

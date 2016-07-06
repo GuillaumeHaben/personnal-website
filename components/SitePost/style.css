@@ -39,6 +39,11 @@
 .blog-post .readmore:hover {
 	border-bottom: 1px solid;
 }
+.blog-post .estimatedTime {
+	font-size: 0.9em;
+	color: #6E6E6E;
+}
+
 .blog-single {
 	max-width: 945px;
 	margin-left: auto;

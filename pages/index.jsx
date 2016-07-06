@@ -24,7 +24,7 @@ class SiteIndex extends React.Component {
                         <h2>home:~$&nbsp;
                         <TypeWriter typing={1} minDelay={800} className="oldStyle">whoami</TypeWriter>
                         </h2>
-                        <p>Hi, my name is Guillaume. I am currently in my final year of a engineering degree
+                        <p>Hi, my name is Guillaume. I am currently in my final year of an engineering degree
                         in IT and digital sciences at <a target="_blank" href="http://telecomnancy.univ-lorraine.fr/">
                         TELECOM Nancy</a> in France.</p>
                         <p>I love creating app from scratch, minimalist design and working late at night.
@@ -35,7 +35,8 @@ class SiteIndex extends React.Component {
                         <p><a href="https://www.instagram.com/guillaumehaben/" target="_blank">
                         See my collections online.
                         </a></p>
-                        <p>Like me, some of you may think that someone's tastes in music can reflect who that person is. <a href="https://play.spotify.com/user/1179350641">I let
+                        <p>Like me, some of you may think that someone's tastes in music can reflect who that person is.
+                        &nbsp;<a href="https://play.spotify.com/user/1179350641" target="_blank">I let
                         you <strike>see</strike> listen by yourself.</a></p>
 
                       </div>
