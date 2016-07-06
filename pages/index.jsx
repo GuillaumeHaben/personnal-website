@@ -29,10 +29,16 @@ class SiteIndex extends React.Component {
                         TELECOM Nancy</a> in France.</p>
                         <p>I love creating app from scratch, minimalist design and working late at night.
                         Understanding how human relationships works is one of my secret hobbies.</p>
+                        <div className="text-center">
+                        <h3><em>
+                        Seeking for a 6 months internship as a software engineer in an enthusiastic team - 2017
+                        </em></h3>
+                        <a href="#">Download my resume</a>
+                        </div>
                         <h3>Miscellaneous</h3>
                         <p> I love travelling and paying attention to the simplest things.
-                        Taking photos of beautiful moments helps me to remember all of it.</p>
-                        <p><a href="https://www.instagram.com/guillaumehaben/" target="_blank">
+                        Taking photos of beautiful moments helps me to remember all of it.<br/>
+                        <a href="https://www.instagram.com/guillaumehaben/" target="_blank">
                         See my collections online.
                         </a></p>
                         <p>Like me, some of you may think that someone's tastes in music can reflect who that person is.
