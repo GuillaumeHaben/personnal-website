@@ -36,12 +36,12 @@ class SitePost extends React.Component {
                   <ReadNext post={ post } {...this.props}/>
                   <hr></hr>
                   <ReactDisqusThread
-                    shortname="example"
-                    identifier="something-unique-12345"
-                    title="Example Thread"
-                    url="http://www.example.com/example-thread"
+                    shortname="guillaumehaben"
+                    identifier={post.path}
+                    title={post.title}
+                    url={"https://guillaumehaben.github.io/" + post.path}
                     category_id="123456"
-                    onNewComment={this.handleNewComment}/>
+                  />
                 </div>
               </div>
             </div>
@@ -50,7 +50,7 @@ class SitePost extends React.Component {
 }
 
 SitePost.propTypes = {
-    post: React.PropTypes.object.isRequired,
+    // post: React.PropTypes.object.isRequired,
     pages: React.PropTypes.array,
 }
 

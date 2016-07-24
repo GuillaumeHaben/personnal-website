@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router'
 import sortBy from 'lodash/sortBy'
 import moment from 'moment'
-import duration from 'moment-duration-format'
 import DocumentTitle from 'react-document-title'
 import { prefixLink } from 'gatsby-helpers'
 import access from 'safe-access'
@@ -17,14 +16,13 @@ class SiteBlog extends React.Component {
         const sortedPages = sortBy(this.props.route.pages, (page) => access(page, 'data.date')
         ).reverse()
         sortedPages.forEach((page) => {
-            if (access(page, 'file.ext') === 'md' && access(page, 'data.layout') === 'post') {
+            if (access(page, 'file.ext') === 'md' && access(page, 'data.layout') === 'project') {
                 const title = access(page, 'data.title') || page.path
                 const description = access(page, 'data.description')
                 const datePublished = access(page, 'data.date')
                 const category = access(page, 'data.category')
                 const body = access(page, 'data.body')
-                const readSeconds = (access(page, 'data.body').split(' ').length / 110) * 60
-                const readTime = ' ' + moment.duration(readSeconds, 'seconds').format('m [min]')
+                const timeToRead = Math.round(body.length/1000);
 
                 pageLinks.push(
                     <div key={pageLinks.length} className='blog-post'>
@@ -34,17 +32,12 @@ class SiteBlog extends React.Component {
                       <span style={ {    padding: '5px'} }></span>
                       <span className='blog-category'>{ category }</span>
                       <h2><Link style={ {    borderBottom: 'none',} } to={ prefixLink(page.path) } > { title } </Link></h2>
-                      <div className="text"><p dangerouslySetInnerHTML={ {    __html: description} } /></div>
-                      <Link className='readmore' to={ prefixLink(page.path) }> Read it now</Link>
-                      <span className="estimatedTime"> - <i className="fa fa-clock-o"></i>
-                      <em> { readTime }
-                      </em></span>
-
+                      <div className="text"><p dangerouslySetInnerHTML={ {    __html: body} } /></div>
+                      <hr></hr>
                     </div>
                 )
             }
         })
-
         return (
             <DocumentTitle key={ config.siteTitle } title={ config.siteTitle }>
               <div>

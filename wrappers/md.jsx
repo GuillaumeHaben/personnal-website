@@ -2,6 +2,7 @@ import React from 'react'
 import DocumentTitle from 'react-document-title'
 import SitePost from '../components/SitePost'
 import SitePage from '../components/SitePage'
+import SiteProjects from '../components/SiteProjects'
 import SiteBlog from '../components/SiteBlog'
 import { config } from 'config'
 
@@ -12,18 +13,23 @@ class MarkdownWrapper extends React.Component {
         let layout, template
 
         layout = post.layout
-        if (layout == 'post') {
-          console.log(post);
-            template = <SitePost {...this.props}/>
-        }
-        if (layout == 'blog') {
-          console.log(post);
-            template = <SiteBlog {...this.props}/>
-        }
+        /* ----- Simple Page Layout ----- */
         if (layout == 'page') {
-          console.log(post);
             template = <SitePage {...this.props}/>
         }
+        /* ----- Blog Main Layout ----- */
+        if (layout == 'blog') {
+            template = <SiteBlog {...this.props}/>
+        }
+        /* ----- Blog Post Layout ----- */
+        if (layout == 'post') {
+            template = <SitePost {...this.props}/>
+        }
+        /* ----- Projects Main Layout ----- */
+        if (layout == 'projects') {
+            template = <SiteProjects {...this.props}/>
+        }
+
 
         return (
             <DocumentTitle title={ `${post.title} - ${config.siteTitle}` }>

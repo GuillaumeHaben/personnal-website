@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Petrona|Basic';
+@import 'https://fonts.googleapis.com/css?family=Petrona|Basic|Crimson+Text';
 
 html, body {
 	background-color: #eee;
@@ -6,6 +6,10 @@ html, body {
 
 .oldStyle {
 	font-family: "monospace";
+}
+
+.theme-color-blue {
+	color: #004266;
 }
 
 .text a {
@@ -16,15 +20,29 @@ html, body {
 	text-decoration: underline;
 }
 
-.text p {
-	font-family: "Petrona";
+.text p, em {
+	font-family: "Crimson Text";
 	font-size: 1.1em;
 	text-align: justify;
 }
 
 .text h1, h2 {
-	font-family: "Basic";
+	font-family: "Roboto";
 	margin-top: 10px;
+}
+
+.blog-post img {
+	border: 0;
+	max-width: 100%;
+	display: inline;
+	margin: inherit auto;
+	border-style: outset;
+	border: 5px solid;
+	border-color: #AEAEAE;
+}
+
+.blog-post h3 { /* For Project Page */
+	margin-top: 5px;
 }
 
 .oldStyle:after {
