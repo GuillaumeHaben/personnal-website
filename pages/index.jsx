@@ -33,7 +33,7 @@ class SiteIndex extends React.Component {
                         <h3><em className="theme-color-blue">
                         Seeking for a 6 months internship as a software engineer in an enthusiastic team - 2017
                         </em></h3>
-                        <a target="_blank" href="https://drive.google.com/file/d/0B_0JMkwlPhFIS0FqczlhMG91UlU/view?usp=sharing">Download my resume</a>
+                        <a target="_blank" href="https://drive.google.com/file/d/0B_0JMkwlPhFIdWVYQnhWaFJ6Rk0/view?usp=sharing">Download my resume</a>
                         </div>
 
                         <h3>Miscellaneous</h3>
