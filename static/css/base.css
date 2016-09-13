@@ -12,6 +12,11 @@ html, body {
 	color: #004266;
 }
 
+.img-profile {
+	padding-right: 15px;
+	padding-top: 15px;
+}
+
 .text a {
 	color: #2F66FE;
 }
@@ -20,7 +25,7 @@ html, body {
 	text-decoration: underline;
 }
 
-.text p, em {
+.text p, em, .text li {
 	font-family: "Crimson Text";
 	font-size: 1.1em;
 	text-align: justify;

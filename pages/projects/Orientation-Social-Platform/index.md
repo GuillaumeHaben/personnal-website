@@ -19,9 +19,10 @@ A Node.js / Express / Socket<span>.</span>io web app developped for all of the s
 * Admin Panel
 
 ### Screenshots
-<a href="https://s32.postimg.org/456j1ejyd/orientation_01.png" target="_blank"><img src="https://s32.postimg.org/456j1ejyd/orientation_01.png" width="350px" /></a><br />
-<a href="https://s32.postimg.org/eqqedeq9x/orientation-02.png" target="_blank"><img src="https://s32.postimg.org/eqqedeq9x/orientation-02.png" width="350px" /></a><br />
-<a href="https://s32.postimg.org/8oirmx1tx/orientation-03.png" target="_blank"><img src="https://s32.postimg.org/8oirmx1tx/orientation-03.png" width="350px" /></a>
+<a href="/static/img/orientation_01.png" target="_blank"><img src="/static/img/orientation_01.png" width="350px" /></a><br />
+<a href="/static/img/orientation_02.png" target="_blank"><img src="/static/img/orientation_02.png" width="350px" /></a><br />
+<a href="/static/img/orientation_03.png" target="_blank"><img src="/static/img/orientation_03.png" width="350px" /></a><br />
+<a href="/static/img/orientation_04.png" target="_blank"><img src="/static/img/orientation_04.png" width="350px" /></a>
 
 ### Links
 <a href="https://github.com/GuillaumeHaben/1TGration" target="_blank">https://github.com/GuillaumeHaben/1TGration</a>

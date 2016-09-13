@@ -24,6 +24,7 @@ class SiteIndex extends React.Component {
                         <h2>home:~$&nbsp;
                         <TypeWriter typing={1} minDelay={800} className="oldStyle">whoami</TypeWriter>
                         </h2>
+                        <img className="pull-left img-profile" src="/static/img/profile.jpg" width="30%" />
                         <p>Hi, my name is Guillaume. I am currently in my final year of an engineering degree
                         in IT and digital sciences at <a target="_blank" href="http://telecomnancy.univ-lorraine.fr/">
                         TELECOM Nancy</a> in France.</p>
@@ -33,7 +34,7 @@ class SiteIndex extends React.Component {
                         <h3><em className="theme-color-blue">
                         Seeking for a 6 months internship as a software engineer in an enthusiastic team - 2017
                         </em></h3>
-                        <a target="_blank" href="https://drive.google.com/file/d/0B_0JMkwlPhFIdWVYQnhWaFJ6Rk0/view?usp=sharing">Download my resume</a>
+                        <a href="/static/docs/resume.pdf" download="Guillaume Haben - Resume">Download my resume</a>
                         </div>
 
                         <h3>Miscellaneous</h3>
