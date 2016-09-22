@@ -11,3 +11,7 @@ siteRssUrl = "#"
 siteVkUrl = "#"
 
 linkPrefix = "/"
+
+googleAnalyticsId = "UA-83176608-1"
+
+buildSPA = true

@@ -2,7 +2,7 @@
 title: Orientation Social Platform
 date: "2016-07-06T23:33:00.169Z"
 layout: post
-path: "/orientation-social-platform/"
+path: "/orientation-social-platform"
 category: "FrontEnd"
 description: "Summer 2015. All of my classmates have to do a two month worker internship.
 Because I had already done mine in my first year at ESSTIN,

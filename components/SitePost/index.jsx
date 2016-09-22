@@ -37,10 +37,7 @@ class SitePost extends React.Component {
                   <hr></hr>
                   <ReactDisqusThread
                     shortname="guillaumehaben"
-                    identifier={post.path}
                     title={post.title}
-                    url={"https://guillaumehaben.github.io/" + post.path}
-                    category_id="123456"
                   />
                 </div>
               </div>
